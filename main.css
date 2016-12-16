@@ -1,0 +1,187 @@
+
+
+/**********************************************************
+        This box centers the logo and shadow
+***********************************************************/
+
+
+.box {
+    width: 120px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+
+/*********************************************************
+        The image dropping
+**********************************************************/
+
+#dropIn {
+    width: 70%;
+    max-width: 90px;
+    background-color: transparent;
+    position: absolute;
+    -webkit-animation: dropIn 2s forwards linear normal;
+    animation: dropIn 2s forwards linear normal;
+}
+
+.image {
+    transition: all .2s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+
+/*********************************************************
+        The shadow under the image
+**********************************************************/
+
+.shadow {
+    position: relative;
+    left: 600px;
+    top: 220px;
+    width: 100px;
+    height: 8px;
+    border-radius: 100%;
+    box-shadow: 0 40px 10px 1px rgba(0, 0, 0, 0.5);
+    -webkit-animation: shadow 2s forwards linear normal;
+    animation: shadow 2s forwards linear normal;
+}
+
+/*​**********************************************************
+                Carousel Slideshow
+***********************************************************/
+/*.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.slideshow {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 1000px;
+}
+*/
+/*​**********************************************************
+                      Projects
+***********************************************************/
+
+
+
+
+
+
+/*​**********************************************************
+                      Key Frames
+***********************************************************/
+@keyframes shadow {
+    0% {
+        width: 12px;
+        left: 40px;
+    }
+    69% {
+        width: 70px;
+        left: 14px;
+        animation-timing-function: ease-in-out;
+    }
+    77% {
+        width: 40px;
+        left: 30px;
+        animation-timing-function: ease-out;
+    }
+    85% {
+        width: 70px;
+        left: 14px;
+        animation-timing-function: ease-out;
+    }
+    93% {
+        width: 50px;
+        left: 25px;
+    }
+    100% {
+        width: 70px;
+        left: 14px;
+    }
+}
+
+@-webkit-keyframes shadow {
+    0% {
+        width: 12px;
+        left: 40px;
+    }
+    69% {
+        width: 70px;
+        left: 15px;
+        animation-timing-function: ease-in-out;
+    }
+    77% {
+        width: 40px;
+        left: 30px;
+        animation-timing-function: ease-out;
+    }
+    85% {
+        width: 70px;
+        left: 15px;
+        animation-timing-function: ease-out;
+    }
+    93% {
+        width: 50px;
+        left: 25px;
+    }
+    100% {
+        width: 70px;
+        left: 15px;
+    }
+}
+
+@keyframes dropIn {
+    0% {
+        top: -500px;
+    }
+    69% {
+        top: 150px;
+        animation-timing-function: ease-out;
+    }
+    77% {
+        top: 120px;
+        animation-timing-function: ease-in-out;
+    }
+    85% {
+        top: 150px;
+        animation-timing-function: ease-in-out;
+    }
+    93% {
+        top: 140px;
+    }
+    100% {
+        top: 150px;
+    }
+}
+
+@-webkit-keyframes dropIn {
+    0% {
+        top: -500px;
+    }
+    69% {
+        top: 150px;
+        animation-timing-function: ease-in-out;
+    }
+    77% {
+        top: 120px;
+        animation-timing-function: ease-in-out;
+    }
+    85% {
+        top: 150px;
+        animation-timing-function: ease-in-out;
+    }
+    93% {
+        top: 140px;
+    }
+    100% {
+        top: 150px;
+    }
+}
