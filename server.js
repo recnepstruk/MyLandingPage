@@ -5,7 +5,7 @@
 // Require all dependencies \\
 var express = require('express');
 var logger = require('morgan');
-var sendgrid = require('sendgrid')
+// var sendgrid = require('sendgrid')
 
 // Create Express App Object \\
 var app = express();
@@ -19,6 +19,7 @@ app.use(express.static('public')); //index file is the '/' root
 
 // Routes \\
 app.get('/', (req, res) => {
+    console.log('Youre at the home route!');
     res.send('index.html', { root: './public/html' })
 });
 
